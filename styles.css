@@ -1,237 +1,243 @@
-	body {
-    	margin:0;
-    	font-family:arial,helvetica,sans-serif;
-    	line-height:11px;
-    }
-    
-    #topbar {
-    	/*background-color:#990000;*/ /*turns fixed bar red*/
-    	width:100%;
-    	height:37px;
-    	color: #3F3F3F;
-    	border-bottom:1px solid #D4D4D4;
-    }
-    
-    .fixedwidth {
-    	width:1050px;
-    	margin:0 auto; /*centers div within another div*/
-    }
-    
-    #logodiv {
-    	padding-left:25px;
-    	float:left; /*otherwise divs would go below each other*/
-    	border-right:1px solid #D4D4D4;
-    }
+body {
+	margin:0;
+	font-family:arial,helvetica,sans-serif;
+	line-height:11px;
+}
 
-    #signindiv {
-		/*background-color:#00CCFF; /*highlights sign in bar in blue*/
-    	font-weight:bold;
-    	font-size:0.8em;
-    	float:left;
-    	border-right:1px solid #D4D4D4;
-    	width:150px;
-    	height:24px;  /*height:37px;*/
-    	padding:13px 0 0 15px;
-    	vertical-align:top;
-    	
-    }
+#topbar {
+	/*background-color:#990000;*/ /*turns fixed bar red*/
+	width:100%;
+	height:38px;
+	color: #3F3F3F;
+	border-bottom:1px solid #D4D4D4;
+}
+
+.fixedwidth {
+	width:1050px;
+	margin:0 auto; /*centers div within another div*/
+}
+
+#logodiv {
+	padding-left:25px;
+	float:left; /*otherwise divs would go below each other*/
+	border-right:1px solid #D4D4D4;
+}
+
+#signindiv {
+/*background-color:#00CCFF; /*highlights sign in bar in blue*/
+	font-weight:bold;
+	font-size:0.8em;
+	float:left;
+	border-right:1px solid #D4D4D4;
+	width:150px;
+	height:24px;  /*height:37px;*/
+	padding:13px 0 0 15px;
+	vertical-align:top;
+	
+}
+
+#signindiv img {
+position:relative; /*image will move down but "Sign In" won't*/
+top:-10px;
+}
+
+#signindiv a {
+    position: absolute;
+    padding-top: 1px;
+    padding-left: 5px;
+}
+
+#topmenudiv {
+	float:left;
+}
+
+#topmenudiv ul {
+	margin:0;
+	padding:0;
+}
+
+#topmenudiv li {
+	list-style:none;
+	font-weight:bold;
+	font-size:0.8em;
+	border-right:1px solid #D4D4D4;
+	padding:13px 20px 13px 20px;
+	height:100%;
+	float:left;
+}
+
+#searchdiv {
+	float:left;
+	padding:8px 0 0 10px;
+}
+
+#searchdiv input {
+	height:18px;
+	border:none;
+	background-color:#D4D4D4;
+	font-size:0.8em;
+	padding-left:5px;
+	background-image:url("images/magnify.png");
+	background-size:15%;
+	background-repeat:no-repeat;
+	background-position:right center;
+	
+}
+
+.break {
+	clear:both;
+}
+
+#newsbar {
+	background-color:#CC0101;
+	width:100%;
+	height:60px;
+	color:white;
+	border-bottom:1px solid #ED4E4E;
+}
+
+#newsbar p {
+	margin:0;
+	padding:24px 0 0 34px;
+}
+
+#newsheader {
+	font-size:2.5em;
+}
+
+#topicmenu {
+	background-color:#CC0101;
+	width:100%;
+	height:40px;
+	color:white;
+	border-bottom:1px solid #ED4E4E;
+}
+
+#topicmenu ul {
+	margin:0;
+	padding-top:10px;
+	padding-left:25px;
+}
+
+#topicmenu li {
+	list-style:none;
+	font-size:0.9em;
+	padding:4px 10px 4px 10px;
+	border-right:1px solid #ED4E4E;
+	float:left;
+}
     
-    #signindiv img {
-		position:relative; /*image will move down but "Sign In" won't*/
-		top:-10px;
-    }
-    
-    #topmenudiv {
-    	float:left;
-    }
-    
-    #topmenudiv ul {
-    	margin:0;
-    	padding:0;
-    }
-    
-    #topmenudiv li {
-    	list-style:none;
-    	font-weight:bold;
-    	font-size:0.8em;
-    	border-right:1px solid #D4D4D4;
-    	padding:13px 20px 13px 20px;
-    	height:100%;
-    	float:left;
-    }
-    
-    #searchdiv {
-    	float:left;
-    	padding:8px 0 0 10px;
-    }
-    
-    #searchdiv input {
-    	height:18px;
-    	border:none;
-    	background-color:#D4D4D4;
-    	font-size:0.8em;
-    	padding-left:5px;
-    	background-image:url("images/magnify.png");
-    	background-size:15%;
-    	background-repeat:no-repeat;
-    	background-position:right center;
-    	
-    }
-    
-    .break {
-    	clear:both;
-    }
-    
-    #newsbar {
-    	background-color:#CC0101;
-    	width:100%;
-    	height:60px;
-    	color:white;
-    	border-bottom:1px solid #ED4E4E;
-    }
-    
-    #newsbar p {
-    	margin:0;
-    	padding:24px 0 0 34px;
-    }
-    
-    #newsheader {
-    	font-size:2.5em;
-    }
-    
-    #topicmenu {
-    	background-color:#CC0101;
-    	width:100%;
-    	height:40px;
-    	color:white;
-    	border-bottom:1px solid #ED4E4E;
-    }
-    
-    #topicmenu ul {
-    	margin:0;
-    	padding-top:10px;
-    	padding-left:25px;
-    }
-    
-    #topicmenu li {
-    	list-style:none;
-    	font-size:0.9em;
-    	padding:4px 10px 4px 10px;
-    	border-right:1px solid #ED4E4E;
-    	float:left;
-    }
-        
-    #content {
-    	width:100%;
-    	color:#535353;
-    	font-size:0.8em;
-    	padding-left:58px;
-    }
-    
-    .date {
-    	font-weight: bold;
-    }
-    
-    h1 {
-    	color:#1F4F82;
-    	font-size:2.5em;
-    }
-    
-    .headlineimage {
-    	float:left;
-    }
-    
-    .newsitem {
-    	position:relative; /*rather than using padding for fun*/
-    	left:10px;
-    	top:-10px;
-    	width:150px;
-    	float:left;
-    	font-size:1.1em;
-    	line-height:16px;
-    	width:280px;
-    }
-    
-    .newsitem a {
-    	color:#1F4F82;
-    	text-decoration:none;
-    }
-    
-    a {
-    	text-decoration:none;
-    }
-    
-    a:hover {
-    	text-decoration:underline;
-    }
-    
-    .video {
-    	background-image:url("images/video.png");
-    	background-size:12px 12px;
-    	background-repeat:no-repeat;
-    	background-position:left center;
-    	padding-left:20px;
-    }
-    
-    .links {
-    	line-height:1.6em;
-    }
-    
-    #watchlisten {
-    	background-color:#EEEEEE;
-    	float:left;
-    	width:287px;
-    	height:255px;
-    	position:relative;
-    	top:-40px;
-    }
-    
-    h2 {
-    	color:#505050;
-    	margin:10px 0 10px 10px;
-    	font-size:1.6em;
-    }
-    
-    .boxes {
-    	float:right;
-    	margin:5px 10px 0 0;
-    }
-    
-    .leftarrow {
-    	float:left;
-    	border-right:1px solid white;
-    }
-    
-    .wlblock {
-    	float:left;
-    	background-color:#D1700E;
-    	width:120px;
-    	border-right:1px solid white;
-    	line-height:1.1em
-    }
-    
-    .wlblock a {
-    	color:white;
-    }
-    
-    .wlblock p {
-    	margin:8px;
-    }
-    
-    #watchlisten ul {
-    	margin:0;
-    	padding:0px 10px 0px 10px;
-    }
-    
-    #watchlisten li {
-    	list-style:none;
-    	background-image:url("images/live.png");
-    	background-size:25px 12px;
-    	background-repeat:no-repeat;
-    	background-position:left center;
-    	padding:12px 0px 10px 30px;
-    }
-    
-    .bb {
-    	border-bottom:1px solid #DDDDDD;
-    }
+#content {
+	width:100%;
+	color:#535353;
+	font-size:0.8em;
+	padding-left:58px;
+}
+
+.date {
+	font-weight: bold;
+}
+
+h1 {
+	color:#1F4F82;
+	font-size:2.5em;
+}
+
+.headlineimage {
+	float:left;
+}
+
+.newsitem {
+	position:relative; /*rather than using padding for fun*/
+	left:10px;
+	top:-10px;
+	width:150px;
+	float:left;
+	font-size:1.1em;
+	line-height:16px;
+	width:280px;
+}
+
+.newsitem a {
+	color:#1F4F82;
+	text-decoration:none;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.video {
+	background-image:url("images/video.png");
+	background-size:12px 12px;
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding-left:20px;
+}
+
+.links {
+	line-height:1.6em;
+}
+
+#watchlisten {
+	background-color:#EEEEEE;
+	float:left;
+	width:287px;
+	height:255px;
+	position:relative;
+	top:-40px;
+}
+
+h2 {
+	color:#505050;
+	margin:10px 0 10px 10px;
+	font-size:1.6em;
+}
+
+.boxes {
+	float:right;
+	margin:5px 10px 0 0;
+}
+
+.leftarrow {
+	float:left;
+	border-right:1px solid white;
+}
+
+.wlblock {
+	float:left;
+	background-color:#D1700E;
+	width:120px;
+	border-right:1px solid white;
+	line-height:1.1em
+}
+
+.wlblock a {
+	color:white;
+}
+
+.wlblock p {
+	margin:8px;
+}
+
+#watchlisten ul {
+	margin:0;
+	padding:0px 10px 0px 10px;
+}
+
+#watchlisten li {
+	list-style:none;
+	background-image:url("images/live.png");
+	background-size:25px 12px;
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding:12px 0px 10px 30px;
+}
+
+.bb {
+	border-bottom:1px solid #DDDDDD;
+}
